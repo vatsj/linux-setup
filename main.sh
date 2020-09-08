@@ -21,5 +21,7 @@ sh anaconda/anaconda.sh
 sh alacritty/alacritty.sh
 sh atom/atom.sh
 
+# sh firefox/firefox.sh
+
 # configures git settings
 sh git/git.sh
