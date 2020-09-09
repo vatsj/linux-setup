@@ -1,3 +1,7 @@
+# stores project root directory
+root=`pwd`
+cd ~/..
+
 sudo apt update; sudo apt -y upgrade
 sudo add-apt-repository ppa:pi-rho/dev -y
 sudo apt update
@@ -5,7 +9,10 @@ sudo apt update
 # installs basic software packages
 sudo apt install -y tmux vim git
 
-sh tmux/tmux.sh
+# installs package managers
+sudo apt install -y npm
+
+sh $root/tmux/tmux.sh
 
 # for importing libraries
 mkdir usrlib
@@ -16,12 +23,14 @@ cd usrlib
 
 # programs
 
-sh anaconda/anaconda.sh
+sh $root/anaconda/anaconda.sh
 
-sh alacritty/alacritty.sh
-sh atom/atom.sh
+sh $root/alacritty/alacritty.sh
+sh $root/atom/atom.sh
 
 # sh firefox/firefox.sh
 
 # configures git settings
-sh git/git.sh
+sh $root/git/git.sh
+
+# restart command?

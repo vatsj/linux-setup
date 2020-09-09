@@ -1,6 +1,6 @@
 sudo apt update; sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3
 
-cd usrlib
+# cd usrlib
 git clone https://github.com/alacritty/alacritty.git
 cargo build --release
 
@@ -12,6 +12,6 @@ sudo update-desktop-database
 
 echo "source $(pwd)/extra/completions/alacritty.bash" >> ~/.bashrc
 
-mkdir ~/.config/alacritty
-cd ~/.config/alacritty
+mkdir ~/.config
+cd ~/.config
 wget https://raw.githubusercontent.com/Rigellute/rigel/master/alacritty.yml
