@@ -24,7 +24,7 @@ cd usrlib
 # drivers
 # sh audio/audio.sh
 
-# programs
+# dev programs
 
 # takes in root dir as arg
 sh $root/anaconda/anaconda.sh $root
@@ -32,12 +32,10 @@ sh $root/anaconda/anaconda.sh $root
 sh $root/alacritty/alacritty.sh
 sh $root/atom/atom.sh
 
-# non-dev programs
-sh $root/misc/misc.sh
-
-# sh firefox/firefox.sh
-
 # configures git settings
 sh $root/git/git.sh
+
+# non-dev programs
+sh $root/misc/misc.sh
 
 # restart command?
