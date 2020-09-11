@@ -1,3 +1,6 @@
+printf "\nINSTALLING ALACRITTY\n"
+
+# failing dramatically
 sudo apt update; sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3
 
 # cd usrlib
