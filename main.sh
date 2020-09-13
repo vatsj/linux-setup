@@ -12,9 +12,9 @@ printf "\n\nINSTALLS TMUX VIM GIT\n"
 sudo apt install -y tmux vim git
 sh $root/tmux/tmux.sh
 
-printf "\n\nINSTALLS NPM\n"
+printf "\n\nINSTALLS NPM NODEJS\n"
 # installs package managers
-sudo apt install -y npm
+sudo apt install -y npm nodejs
 
 printf "\n\n moving to usrlib: \n"
 # for importing libraries

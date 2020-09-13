@@ -19,3 +19,8 @@ sudo update-alternatives --config java
 sudo update-alternatives --config javac
 printf "\n Zulu JDK downloaded, now install ThinkOrSwim from here:\n"
 printf "https://www.tdameritrade.com/tools-and-platforms/thinkorswim/desktop/download.page \n"
+
+printf "\nWALLCH\n"
+# wallch
+sudo add-apt-repository ppa:wallch/3+
+sudo apt-get update && sudo apt install wallch
