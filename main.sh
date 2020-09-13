@@ -43,12 +43,12 @@ cd usrlib
 # dev programs
 
 # takes in root dir as arg
-. $root/anaconda/anaconda.sh $root
+sh $root/anaconda/anaconda.sh $root
 
-. $root/alacritty/alacritty.sh
-. $root/atom/atom.sh
+sh $root/alacritty/alacritty.sh
+sh $root/atom/atom.sh
 
 # non-dev programs
-. $root/misc/misc.sh
+sh $root/misc/misc.sh
 
 # restart command?

@@ -4,10 +4,10 @@ wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 
 # Install Atom
-apt_UD atom
+# apt_UD atom
 
-# sudo apt-get update
-# sudo apt install -y atom
+sudo apt-get update
+sudo apt install -y atom
 
 # install atom packages
 apm install platformio-ide-terminal

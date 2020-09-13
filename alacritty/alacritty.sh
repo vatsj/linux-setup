@@ -3,7 +3,7 @@ printf "\nINSTALLING ALACRITTY\n"
 # failing dramatically
 sudo apt update; sudo apt install cmake pkg-config libfreetype6-dev libfontconfig1-dev libxcb-xfixes0-dev python3
 
-# cd usrlib
+# pulls pkg from github
 git clone https://github.com/alacritty/alacritty.git
 cargo build --release
 
@@ -18,4 +18,9 @@ echo "source $(pwd)/extra/completions/alacritty.bash" >> ~/.bashrc
 
 mkdir ~/.config
 cd ~/.config
-wget https://raw.githubusercontent.com/Rigellute/rigel/master/alacritty.yml
+
+# pulls config file iff it doesn't already exist
+if ! test -f alacritty.yml
+then
+  wget https://raw.githubusercontent.com/Rigellute/rigel/master/alacritty.yml
+fi

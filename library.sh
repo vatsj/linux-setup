@@ -3,10 +3,11 @@
 
 # taking in parameters
 root=$1
-dir=$root/anaconda
+dir=$root
 
 # init log file
-log=$root/log.txt
+log=$dir/log.txt
+echo $log
 rm $log
 touch $log
 
@@ -15,6 +16,6 @@ apt_UD()
 {
   package=$1
 
-  sudo apt update > $root/log.txt
-  sudo apt install -y $package > $root/log.txt
+  sudo apt update > $log
+  sudo apt install -y $package > $log
 }
