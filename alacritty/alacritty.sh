@@ -13,6 +13,7 @@ sudo cp extra/logo/alacritty-term.svg /usr/share/pixmaps/Alacritty.svg
 sudo desktop-file-install extra/linux/Alacritty.desktop
 sudo update-desktop-database
 
+# adds call to bashrc
 echo "source $(pwd)/extra/completions/alacritty.bash" >> ~/.bashrc
 
 mkdir ~/.config

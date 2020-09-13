@@ -1,6 +1,17 @@
+#!/bin/sh\
+
 # stores project root directory
 root=`pwd`
-cd ~/..
+cd ..
+
+# printf "root: "
+# echo $root
+
+# imports library script
+. $root/library.sh $root
+
+# prompts for password
+sudo printf "sudo access granted \n"
 
 printf "\n\nUPDATING APT\n"
 sudo apt update; sudo apt -y upgrade
@@ -10,7 +21,12 @@ sudo apt update
 printf "\n\nINSTALLS TMUX VIM GIT\n"
 # installs basic software packages
 sudo apt install -y tmux vim git
-sh $root/tmux/tmux.sh
+
+# configures settings
+# git has to go first? everything else installs github packages
+. $root/git/git.sh
+. $root/tmux/tmux.sh
+
 
 printf "\n\nINSTALLS NPM NODEJS\n"
 # installs package managers
@@ -27,15 +43,12 @@ cd usrlib
 # dev programs
 
 # takes in root dir as arg
-sh $root/anaconda/anaconda.sh $root
+. $root/anaconda/anaconda.sh $root
 
-sh $root/alacritty/alacritty.sh
-sh $root/atom/atom.sh
-
-# configures git settings
-sh $root/git/git.sh
+. $root/alacritty/alacritty.sh
+. $root/atom/atom.sh
 
 # non-dev programs
-sh $root/misc/misc.sh
+. $root/misc/misc.sh
 
 # restart command?
