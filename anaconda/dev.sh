@@ -5,6 +5,9 @@ conda activate dev
 # jupyter lab
 conda install -c conda-forge jupyterlab
 
+# tex stuff for jupyterlab ipynb --> tex --> pdf
+conda install nbconvert
+
 # ML libraries
 conda install -c anaconda tensorflow
 conda install -c anaconda numpy

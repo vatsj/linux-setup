@@ -7,7 +7,7 @@ dir=$root
 
 # init log file
 log=$dir/log.txt
-echo $log
+# echo $log
 rm $log
 touch $log
 

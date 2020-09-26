@@ -8,7 +8,7 @@ cd ..
 # echo $root
 
 # imports library script
-. $root/library.sh $root
+sh $root/library.sh $root
 
 # prompts for password
 sudo printf "sudo access granted \n"
@@ -27,6 +27,8 @@ sudo apt install -y tmux vim git
 . $root/git/git.sh
 . $root/tmux/tmux.sh
 
+# installs tex dependencies
+. $root/latex/latex.sh
 
 printf "\n\nINSTALLS NPM NODEJS\n"
 # installs package managers

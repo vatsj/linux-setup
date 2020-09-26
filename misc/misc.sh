@@ -24,3 +24,8 @@ printf "\nWALLCH\n"
 # wallch
 sudo add-apt-repository ppa:wallch/3+
 sudo apt-get update && sudo apt install wallch
+
+printf "\nPNOTO EDITING\n"
+# gimp/inkscape
+sudo snap install gimp
+sudo apt install inkscape
