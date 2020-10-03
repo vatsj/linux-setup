@@ -17,10 +17,10 @@ wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
 chmod u+x Anaconda3-2019.07-Linux-x86_64.sh
 
 # runs anaconda setup script (IN BASH)
-bash ./Anaconda3-2019.07-Linux-x86_64.sh	-y # requires you to click thru
+bash ./Anaconda3-2019.07-Linux-x86_64.sh -y # requires you to click thru
 
 # instantiates conda venv's in the shell
-# source ~/.bashrc
+printf "\nCALLS CONDA INIT\n"
 conda init
 
 rm ./Anaconda3-2019.07-Linux-x86_64.sh

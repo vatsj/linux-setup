@@ -1,5 +1,9 @@
 printf "\nINSTALLING ATOM & PACKAGES\n"
 
+# taking in parameters
+root=$1
+dir=$root/atom
+
 wget -qO - https://packagecloud.io/AtomEditor/atom/gpgkey | sudo apt-key add -
 sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ any main" > /etc/apt/sources.list.d/atom.list'
 
@@ -11,7 +15,7 @@ sudo apt install -y atom
 
 # import keybindings, config files
 atom="~/.atom"
-cp keymap.cson $atom
+cp $dir/keymap.cson $atom
 
 # install atom packages
 
