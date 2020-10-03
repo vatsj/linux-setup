@@ -10,13 +10,23 @@ dir=$root/anaconda
 # mkdir anaconda
 # cd anaconda
 
+# dependencies
+apt-get install libgl1-mesa-glx libegl1-mesa libxrandr2 libxrandr2 libxss1 libxcursor1 libxcomposite1 libasound2 libxi6 libxtst6
+
 wget https://repo.anaconda.com/archive/Anaconda3-2019.07-Linux-x86_64.sh
 chmod u+x Anaconda3-2019.07-Linux-x86_64.sh
-./Anaconda3-2019.07-Linux-x86_64.sh	-y # requires you to click thru
+
+# runs anaconda setup script (IN BASH)
+bash ./Anaconda3-2019.07-Linux-x86_64.sh	-y # requires you to click thru
+
+# instantiates conda venv's in the shell
+# source ~/.bashrc
+conda init
+
 rm ./Anaconda3-2019.07-Linux-x86_64.sh
 
 # updates conda if already installed
-conda update -n base -c defaults conda
+conda update -n base -c defaults conda -y
 
 conda init
 

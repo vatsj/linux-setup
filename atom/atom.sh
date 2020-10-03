@@ -9,8 +9,15 @@ sudo sh -c 'echo "deb [arch=amd64] https://packagecloud.io/AtomEditor/atom/any/ 
 sudo apt-get update
 sudo apt install -y atom
 
-# install atom packages
-apm install platformio-ide-terminal
-apm install Hydrogen
+# import keybindings, config files
+atom="~/.atom"
+cp keymap.cson $atom
 
-# modify stylesheet for platformio?
+# install atom packages
+
+# terminal packages are finicky...
+# apm install platformio-ide-terminal
+apm install termination
+# modify stylesheet for terminal?
+
+apm install Hydrogen
