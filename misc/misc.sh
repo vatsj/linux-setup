@@ -1,11 +1,5 @@
 printf "\n\nINSTALLS MISC PROGRAMS\n"
 
-printf "\nSIGNAL\n"
-# signal
-curl -s https://updates.signal.org/desktop/apt/keys.asc | sudo apt-key add -
-echo "deb [arch=amd64] https://updates.signal.org/desktop/apt xenial main" | sudo tee /etc/apt/sources.list.d/signal-xenial.list
-sudo apt update && sudo apt install signal-desktop
-
 printf "\nTHINKORSWIM\n"
 # ThinkOrSwim
 # not using conda, supposedly for java it matters less

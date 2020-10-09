@@ -51,6 +51,7 @@ sh $root/alacritty/alacritty.sh
 sh $root/atom/atom.sh
 
 # non-dev programs
+sh $root/social/social.sh
 sh $root/misc/misc.sh
 
 # restart command?
