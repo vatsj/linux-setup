@@ -28,7 +28,9 @@ rm ./Anaconda3-2019.07-Linux-x86_64.sh
 # updates conda if already installed
 conda update -n base -c defaults conda -y
 
+# conda init, then rerun bashrc
 conda init
+bashrc
 
 # calls files to create custom envs
 sh $dir/dev.sh

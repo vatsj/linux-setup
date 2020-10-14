@@ -1,5 +1,10 @@
 printf "\n\nINSTALLS MISC PROGRAMS\n"
 
+printf "\nCHROME\n"
+# installs google chrome
+wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+sudo dpkg -i google-chrome-stable_current_amd64.deb
+
 printf "\nTHINKORSWIM\n"
 # ThinkOrSwim
 # not using conda, supposedly for java it matters less

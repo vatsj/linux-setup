@@ -1,7 +1,11 @@
 printf "\n\nCONFIGURING GIT/GITHUB\n"
 
+# taking in parameters
+root=$1
+dir=$root/git
+
 printf "\nSETTING GIT CONFIGS (credentials are private)\n"
-sh auth.sh
+sh $dir/auth.sh
 
 printf "\nINSTALLS GITHUB CLI\n"
 # github CLI
@@ -10,4 +14,4 @@ sudo apt-add-repository https://cli.github.com/packages
 sudo apt update
 sudo apt install gh
 
-sh perweb.sh
+sh $dir/perweb.sh

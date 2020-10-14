@@ -24,7 +24,7 @@ sudo apt install -y tmux vim git
 
 # configures settings
 # git has to go first? everything else installs github packages
-. $root/git/git.sh
+. $root/git/git.sh $root
 . $root/tmux/tmux.sh
 
 # installs tex dependencies
