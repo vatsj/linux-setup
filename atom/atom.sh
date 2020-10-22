@@ -14,7 +14,7 @@ sudo apt-get update
 sudo apt install -y atom
 
 # import keybindings, config files
-atom="~/.atom"
+atom=~/.atom
 cp $dir/keymap.cson $atom
 
 # install atom packages

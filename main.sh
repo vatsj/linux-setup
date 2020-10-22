@@ -30,9 +30,15 @@ sudo apt install -y tmux vim git
 # installs tex dependencies
 . $root/latex/latex.sh
 
+
 printf "\n\n moving to usrlib: \n"
 # for importing libraries
-mkdir usrlib
+
+# tests if usrlib already exists
+if ! test -d usrlib
+then
+  mkdir usrlib
+fi
 cd usrlib
 
 # drivers
