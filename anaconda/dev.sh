@@ -1,3 +1,5 @@
+#!/bin/bash
+
 # creates conda env
 conda create --name dev # python=3.7
 conda activate dev

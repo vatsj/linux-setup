@@ -20,7 +20,7 @@ apt_UD()
   sudo apt install -y $package > $log
 }
 
-bashrc()
-{
-  source ~/.bashrc
-}
+# bashrc()
+# {
+#   source ~/.bashrc
+# }

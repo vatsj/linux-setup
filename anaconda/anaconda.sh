@@ -30,11 +30,11 @@ conda update -n base -c defaults conda -y
 
 # conda init, then rerun bashrc
 conda init
-bashrc
+source ~/.bashrc
 
 # calls files to create custom envs
-sh $dir/dev.sh
-sh $dir/nondev.sh
+source $dir/dev.sh
+source $dir/nondev.sh
 
 # test
 conda env list
