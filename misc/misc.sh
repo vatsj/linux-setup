@@ -2,6 +2,11 @@ printf "\n\nINSTALLS MISC PROGRAMS\n"
 
 printf "\nCHROME\n"
 # installs google chrome
+
+# removes previous install
+rm -rf google-chrome-stable_current_amd64.deb
+
+# installs fresh copy
 wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
 sudo dpkg -i google-chrome-stable_current_amd64.deb
 

@@ -30,10 +30,6 @@ sudo apt install -y tmux vim git
 # installs tex dependencies
 . $root/latex/latex.sh
 
-printf "\n\nINSTALLS NPM NODEJS\n"
-# installs package managers
-sudo apt install -y npm nodejs
-
 printf "\n\n moving to usrlib: \n"
 # for importing libraries
 mkdir usrlib
@@ -44,6 +40,9 @@ cd usrlib
 
 # dev programs
 
+# language dependencies
+sh $root/lang_deps/deps.sh $root
+
 # takes in root dir as arg
 sh $root/anaconda/anaconda.sh $root
 
@@ -53,5 +52,8 @@ sh $root/atom/atom.sh
 # non-dev programs
 sh $root/social/social.sh
 sh $root/misc/misc.sh
+
+# not working properly
+# sh $root/media/ytdl.sh
 
 # restart command?
