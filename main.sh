@@ -53,13 +53,13 @@ sh $root/lang_deps/deps.sh $root
 sh $root/anaconda/anaconda.sh $root
 
 sh $root/alacritty/alacritty.sh
-sh $root/atom/atom.sh
+sh $root/atom/atom.sh $root
 
 # non-dev programs
 sh $root/social/social.sh
+sh $root/media/ytdl.sh
+
 sh $root/misc/misc.sh
 
-# not working properly
-# sh $root/media/ytdl.sh
 
 # restart command?

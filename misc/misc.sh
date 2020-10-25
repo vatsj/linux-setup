@@ -27,9 +27,13 @@ printf "https://www.tdameritrade.com/tools-and-platforms/thinkorswim/desktop/dow
 printf "\nWALLCH\n"
 # wallch
 sudo add-apt-repository ppa:wallch/3+
-sudo apt-get update && sudo apt install wallch
+sudo apt-get update && sudo apt install wallch -y
 
 printf "\nPNOTO EDITING\n"
 # gimp/inkscape
 sudo snap install gimp
 sudo apt install inkscape
+
+# included in conda - dev!
+printf "\nFORMAT CONVERSION - PANDOC\n"
+sudo apt install pandoc
