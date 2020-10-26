@@ -1,4 +1,4 @@
-#!/bin/bashs
+#!/bin/bash
 
 # creates conda env
 conda create --name nondev # python=3.7

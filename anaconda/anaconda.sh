@@ -31,6 +31,7 @@ conda init
 source ~/.bashrc
 
 # calls files to create custom envs
+# async errors for `sh` vs `source`?
 source $dir/dev.sh
 source $dir/nondev.sh
 

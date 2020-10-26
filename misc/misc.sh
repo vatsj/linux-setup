@@ -29,11 +29,11 @@ printf "\nWALLCH\n"
 sudo add-apt-repository ppa:wallch/3+
 sudo apt-get update && sudo apt install wallch -y
 
-printf "\nPNOTO EDITING\n"
-# gimp/inkscape
-sudo snap install gimp
-sudo apt install inkscape
-
 # included in conda - dev!
 printf "\nFORMAT CONVERSION - PANDOC\n"
 sudo apt install pandoc
+
+printf "\nF.LUX\n"
+sudo add-apt-repository ppa:nathan-renniewaldock/flux
+sudo apt-get update
+sudo apt-get install fluxgui
