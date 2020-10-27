@@ -57,7 +57,7 @@ sh $root/atom/atom.sh $root
 
 # non-dev programs
 sh $root/social/social.sh
-sh $root/media/ytdl.sh
+sh $root/media/media.sh $root
 
 sh $root/misc/misc.sh
 

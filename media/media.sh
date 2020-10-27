@@ -5,5 +5,5 @@ printf "\nINSTALLING MEDIA-EDITING APPS\n"
 root=$1
 dir=$root/anaconda
 
-source $dir/photos.sh
-source $dir/ytdl.sh
+sh $dir/photos.sh
+sh $dir/ytdl.sh

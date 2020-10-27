@@ -3,12 +3,19 @@ printf "\n\nINSTALLS MISC PROGRAMS\n"
 printf "\nCHROME\n"
 # installs google chrome
 
-# removes previous install
-rm -rf google-chrome-stable_current_amd64.deb
+# checks if chrome already installed
+if ! test -e google-chrome-stable_current_amd64.deb
+then
+  # installs fresh copy
+  wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
+  sudo dpkg -i google-chrome-stable_current_amd64.deb
+else
+  printf "\nSUCCESS - CHROME ALREADY INSTALLED\n"
+fi
 
-# installs fresh copy
-wget https://dl.google.com/linux/direct/google-chrome-stable_current_amd64.deb
-sudo dpkg -i google-chrome-stable_current_amd64.deb
+# removes previous install
+# rm -rf google-chrome-stable_current_amd64.deb
+
 
 printf "\nTHINKORSWIM\n"
 # ThinkOrSwim
@@ -33,7 +40,9 @@ sudo apt-get update && sudo apt install wallch -y
 printf "\nFORMAT CONVERSION - PANDOC\n"
 sudo apt install pandoc
 
-printf "\nF.LUX\n"
-sudo add-apt-repository ppa:nathan-renniewaldock/flux
-sudo apt-get update
-sudo apt-get install fluxgui
+printf "\nREDSHIFT (or f.lux)\n"
+# sudo add-apt-repository ppa:nathan-renniewaldock/flux
+# sudo apt-get update
+# sudo apt-get install fluxgui
+sudo apt-get install geoclue-2.0 redshift redshift-gtk
+sudo redshift-gtk
