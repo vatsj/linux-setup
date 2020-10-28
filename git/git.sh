@@ -1,3 +1,4 @@
+# NEEDS AUTH.SH FILE (add manually)
 printf "\n\nCONFIGURING GIT/GITHUB\n"
 
 # taking in parameters

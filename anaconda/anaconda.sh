@@ -34,7 +34,7 @@ conda update -n base -c defaults conda -y
 printf "\nCALLS CONDA INIT\n"
 # conda init, then rerun bashrc
 conda init
-source ~/.bashrc
+sh ~/.bashrc
 
 # calls files to create custom envs
 # async errors for `sh` vs `source`?
