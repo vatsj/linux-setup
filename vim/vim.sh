@@ -7,7 +7,7 @@ then
   git clone --depth=1 https://github.com/amix/vimrc.git ~/.vim_runtime
   sh ~/.vim_runtime/install_awesome_vimrc.sh
 else
-  printf "\nSUCCESS - .vimrc ALREADY INSTALLED\n"
+  printf "\nSUCCESS: .vimrc ALREADY INSTALLED\n"
 fi
 
 # Tse's vimrc
