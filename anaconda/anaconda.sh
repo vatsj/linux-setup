@@ -33,13 +33,14 @@ conda update -n base -c defaults conda -y
 # instantiates conda venv's in the shell
 printf "\nCALLS CONDA INIT\n"
 # conda init, then rerun bashrc
-conda init bash
+conda init
 source ~/.bashrc
 
 # calls files to create custom envs
 # async errors for `sh` vs `source`?
-bash $dir/dev.sh
-bash $dir/nondev.sh
+bash -i $dir/dev.sh
+bash -i $dir/nondev.sh
 
 # test
+printf "\nLISTING CONDA ENVS (conda env list):\n"
 conda env list

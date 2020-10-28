@@ -2,9 +2,6 @@
 
 # creates conda env
 conda create --name dev # python=3.7
-
-# shouldn't need conda init in each respective shell?
-conda init
 conda activate dev
 
 # jupyter lab

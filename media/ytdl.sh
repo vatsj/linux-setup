@@ -5,6 +5,9 @@ printf "\nINSTALLING YOUTUBE-DL & FRIENDS\n"
 sudo wget https://yt-dl.org/downloads/latest/youtube-dl -O /usr/local/bin/youtube-dl
 sudo chmod a+rx /usr/local/bin/youtube-dl
 
+# temp install for ffmpeg
+apt install ffmpeg
+
 # NOT WORKING
 
 # install manager for:
