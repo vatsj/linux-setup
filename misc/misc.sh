@@ -28,21 +28,5 @@ sudo apt-get install zulu-8
 # sets Java 8 as default java
 sudo update-alternatives --config java
 sudo update-alternatives --config javac
-printf "\n Zulu JDK downloaded, now install ThinkOrSwim from here:\n"
+printf "\n SUCCESS - Zulu JDK downloaded, now install ThinkOrSwim from here:\n"
 printf "https://www.tdameritrade.com/tools-and-platforms/thinkorswim/desktop/download.page \n"
-
-printf "\nWALLCH\n"
-# wallch
-sudo add-apt-repository ppa:wallch/3+
-sudo apt-get update && sudo apt install wallch -y
-
-# included in conda - dev!
-printf "\nFORMAT CONVERSION - PANDOC\n"
-sudo apt install pandoc
-
-printf "\nREDSHIFT (or f.lux)\n"
-# sudo add-apt-repository ppa:nathan-renniewaldock/flux
-# sudo apt-get update
-# sudo apt-get install fluxgui
-sudo apt-get install geoclue-2.0 redshift redshift-gtk
-sudo redshift-gtk

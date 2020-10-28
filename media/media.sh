@@ -3,7 +3,7 @@ printf "\nINSTALLING MEDIA-EDITING APPS\n"
 
 # taking in parameters
 root=$1
-dir=$root/anaconda
+dir=$root/media
 
 sh $dir/photos.sh
 sh $dir/ytdl.sh

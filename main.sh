@@ -25,6 +25,8 @@ sudo apt install -y tmux vim git
 # configures settings
 # git has to go first? everything else installs github packages
 . $root/git/git.sh $root
+
+. $root/vim/vim.sh
 . $root/tmux/tmux.sh
 
 # installs tex dependencies
@@ -51,13 +53,17 @@ sh $root/lang_deps/deps.sh $root
 
 # takes in root dir as arg
 sh $root/anaconda/anaconda.sh $root
-
 sh $root/alacritty/alacritty.sh
+
 sh $root/atom/atom.sh $root
 
 # non-dev programs
 sh $root/social/social.sh
+
+# media processing programs
 sh $root/media/media.sh $root
+# cmd-line and display utilities
+sh $root/utils/utils.sh $root
 
 sh $root/misc/misc.sh
 
